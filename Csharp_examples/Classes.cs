@@ -24,5 +24,10 @@ public class Foo
 
 public class Foo2(int id)
 {
-    public int Id { get; set; } = id;
+    public void Something()
+    {
+        Console.WriteLine(id);
+    }
 }
+
+public record Foo1(int Name, int Java);

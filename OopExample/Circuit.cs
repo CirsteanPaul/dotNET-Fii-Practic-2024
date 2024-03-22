@@ -4,8 +4,8 @@ public class Circuit
 {
     private int _circuitLength; // the length of the circuit should not be available outside of circuit context
     private WeatherCondition _weatherCondition = WeatherCondition.Rainy; // same for weather condition
-    private readonly List<Car> _cars = new();
-    private readonly List<Result> _results = new();
+    private readonly IList<Car> _cars = new List<Car>();
+    private readonly IList<Result> _results = new List<Result>();
     public void SetLength(int length)
     {
         _circuitLength = length; // basic setter

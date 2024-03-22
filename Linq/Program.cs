@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-var list = new List<int>();
+IList<int> list = new List<int>();
 list.Add(10);
 list.Add(20);
 foreach(var item in list) {

@@ -25,23 +25,3 @@ Console.WriteLine(foo.Id);
 Console.WriteLine(foo.GetName());
 Console.WriteLine(foo.Name);
 Console.WriteLine(foo.GetSecret());
-
-var foo2 = new Foo2(5);
-Console.WriteLine(foo2.Id);
-
-try
-{
-    Console.WriteLine(((string)null + null + null) == "");
-}
-catch (Exception e)
-{
-    Console.WriteLine(e.GetType());
-}
-
-var x = "FII PRACTIC";
-var y = new System.Text.StringBuilder().Append("FII ").Append("PRACTIC").ToString();
-var z = string.Intern(y);
-Console.WriteLine(x == y);
-Console.WriteLine(x == z);
-Console.WriteLine((object)x == (object)y);
-Console.WriteLine((object)x == (object)z);

@@ -7,7 +7,12 @@ var allLines = File.ReadLines("../../../in.txt", Encoding.UTF8);
 var sum = 0;
 foreach (var line in allLines)
 {
-    sum += int.Parse(line);
+    if (int.TryParse(line, out var number))
+    {
+        sum += number;
+    }
+
+    int x = number;
 }
 
 Console.WriteLine(sum);
